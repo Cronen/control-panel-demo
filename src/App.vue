@@ -5,10 +5,7 @@
 </template>
 
 <style lang="scss">
-@import "node_modules/bootstrap/scss/bootstrap";
-@import "node_modules/bootstrap-vue/src/index.scss";
 $shade_color: #a5a5a5;
-
 body {
   background-color: #e5e5e5;
 }
@@ -23,5 +20,10 @@ body {
   -webkit-box-shadow: 0px 0px 8px 4px $shade_color;
   -moz-box-shadow: 0px 0px 8px 4px $shade_color;
   box-shadow: 0px 0px 8px 4px $shade_color;
+}
+
+.info_hl {
+  font-weight: bold;
+  font-size: 1.5em;
 }
 </style>

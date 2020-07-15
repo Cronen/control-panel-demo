@@ -16,16 +16,18 @@ import Evidence from "@/components/info_boxes/Evidence.vue";
 export default {
   name: "InfoBoxes",
   props: {
-    msg: String
+    msg: String,
   },
   components: {
-    Evidence
-  }
+    Evidence,
+  },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+// @import "node_modules/bootstrap/scss/bootstrap";
+
 .info_container {
   background: white;
   width: 95%;
@@ -36,7 +38,6 @@ export default {
 }
 .info_box {
   height: 400px;
-  width: 150px;
   width: 150px;
   padding: 0 6px;
   //border in the bottom
@@ -49,15 +50,21 @@ export default {
     top: 101%;
     left: 7%;
   }
+
   //makes the divs inside info_box scrollable
   div {
     overflow-y: auto;
     // overflow-x: hidden;
     max-height: 100%;
   }
+  @include media-breakpoint-down(sm) {
+    border-right: 1px solid darkgrey;
+  }
 }
 .right_border {
-  border-right: 1px solid darkgrey;
+  @include media-breakpoint-up(md) {
+    border-right: 1px solid darkgrey;
+  }
 }
 
 /* width */
