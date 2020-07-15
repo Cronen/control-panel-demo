@@ -25,5 +25,6 @@ body {
 .info_hl {
   font-weight: bold;
   font-size: 1.5em;
+  padding-top: 10px;
 }
 </style>

@@ -4,14 +4,20 @@
       <b-col cols="12" md="4" class="info_box right_border">
         <Evidence />
       </b-col>
-      <b-col cols="12" md="4" class="info_box right_border">Test</b-col>
-      <b-col cols="12" md="4" class="info_box">Test</b-col>
+      <b-col cols="12" md="4" class="info_box right_border">
+        <Objectives />
+      </b-col>
+      <b-col cols="12" md="4" class="info_box">
+        <Videos />
+      </b-col>
     </b-row>
   </b-container>
 </template>
 
 <script>
 import Evidence from "@/components/info_boxes/Evidence.vue";
+import Objectives from "@/components/info_boxes/Objectives.vue";
+import Videos from "@/components/info_boxes/Videos.vue";
 
 export default {
   name: "InfoBoxes",
@@ -20,6 +26,8 @@ export default {
   },
   components: {
     Evidence,
+    Objectives,
+    Videos,
   },
 };
 </script>
@@ -33,11 +41,11 @@ export default {
   width: 95%;
   max-width: 1750px;
   margin: 25px auto;
-  padding: 15px;
+  padding: 0 15px 15px 15px;
   overflow: hidden;
 }
 .info_box {
-  height: 400px;
+  height: 450px;
   width: 150px;
   padding: 0 6px;
   //border in the bottom
