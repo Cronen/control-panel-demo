@@ -1,14 +1,17 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view />
   </div>
 </template>
 
 <style lang="scss">
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap-vue/src/index.scss";
+$shade_color: #a5a5a5;
+
+body {
+  background-color: #e5e5e5;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,17 +19,9 @@
   text-align: center;
   color: #2c3e50;
 }
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.box_shadow {
+  -webkit-box-shadow: 0px 0px 8px 4px $shade_color;
+  -moz-box-shadow: 0px 0px 8px 4px $shade_color;
+  box-shadow: 0px 0px 8px 4px $shade_color;
 }
 </style>
