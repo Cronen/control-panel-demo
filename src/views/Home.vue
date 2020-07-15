@@ -11,7 +11,7 @@ import InfoBoxes from "@/components/InfoBoxes.vue";
 export default {
   name: "Home",
   components: {
-    InfoBoxes
-  }
+    InfoBoxes,
+  },
 };
 </script>
