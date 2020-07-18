@@ -19,11 +19,7 @@
           v-for="n in location.content.length"
           :key="n"
         >
-          <b-img
-            fluid
-            class="evidence_img mb-1"
-            :src="location.content[n - 1]"
-          />
+          <b-img fluid class="evidence_img mb-1" :src="location.content[n - 1]" />
         </b-col>
       </b-row>
     </b-container>
@@ -39,20 +35,20 @@ export default {
         {
           name: "Backpack",
           content: [
-            "https://i.pinimg.com/originals/10/16/c8/1016c847560d2982fe13a86288b2dffb.jpg",
             "https://live.staticflickr.com/8458/7913995588_6865f502b4_b.jpg",
             "https://live.staticflickr.com/8458/7913995588_6865f502b4_b.jpg",
-          ],
+            "https://live.staticflickr.com/8458/7913995588_6865f502b4_b.jpg"
+          ]
         },
         {
           name: "House",
           content: [
-            "https://i.pinimg.com/originals/10/16/c8/1016c847560d2982fe13a86288b2dffb.jpg",
-          ],
-        },
-      ],
+            "https://i.pinimg.com/originals/10/16/c8/1016c847560d2982fe13a86288b2dffb.jpg"
+          ]
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
